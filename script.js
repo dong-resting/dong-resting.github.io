@@ -15,7 +15,7 @@
   const v = document.getElementById("bgVideo");
   v.addEventListener("canplay", () => { videoReady = true; check(); });
   // 超时保护：5秒后强制完成
-  setTimeout(() => { videoReady = true; check(); }, 5000);
+  //setTimeout(() => { videoReady = true; check(); }, 5000);
 
   const img = new Image();
   img.onload = () => { avatarReady = true; check(); };
