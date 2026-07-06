@@ -1,4 +1,4 @@
-// ===== 加载界面  =====
+// ===== 加载界面 =====
 (function() {
   const loader = document.getElementById("loader");
   let ok = 0;
@@ -14,7 +14,7 @@
   avatar.addEventListener("load", one);
   avatar.addEventListener("error", one);
   avatar.src = "img/头像.jpg";
-  //setTimeout(done, 4000);
+  setTimeout(done, 4000);
 })();
 
 // ===== 文章数据来自 posts.js，这里只做分页 =====
