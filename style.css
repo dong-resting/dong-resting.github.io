@@ -459,20 +459,49 @@ body.hover-main .video-overlay::after { opacity: 1; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .loader-box p { font-size: 14px; opacity: 0.5; letter-spacing: 0.08em; }
 
-/* ===== 响应式 ===== */
+/* ===== 响应式：手机 ===== */
 @media (max-width: 720px) {
-  .stage { flex-direction: column; gap: 14px; }
-  .intro { width: 92vw; max-height: none; padding: 24px 20px; }
-  .intro-avatar-wrap { width: 80px; height: 80px; margin-bottom: 10px; }
-  .intro-name { font-size: 17px; margin-bottom: 8px; }
-  .intro-bio { font-size: 12px; margin-bottom: 12px; }
-  .main { padding: 28px 22px; width: 92vw; max-height: 58vh; }
+  html, body { overflow-y: auto; overflow-x: hidden; height: auto; }
+
+  .stage {
+    position: relative; top: auto; left: auto; transform: none;
+    flex-direction: column; gap: 14px;
+    padding: 24px 12px 120px;
+    max-width: 100%;
+  }
+
+  .intro { width: 100%; max-height: none; flex-shrink: 1; padding: 28px 22px; }
+  .intro-avatar-wrap { width: 100px; height: 100px; margin-bottom: 12px; }
+  .intro-name { font-size: 18px; margin-bottom: 8px; }
+  .intro-bio { font-size: 12px; margin-bottom: 14px; }
+  .intro-tags { gap: 6px; }
+  .intro-tags span { font-size: 10px; padding: 3px 10px; }
+  .intro-owner { font-size: 11px; }
+
+  .main { width: 100%; max-height: none; padding: 28px 18px; animation: none; }
   .header h1 { font-size: 22px; }
-  .posts { grid-template-columns: 1fr; }
-  .page-nav { flex-direction: row; }
-  .page-btn { width: 48px; height: 48px; }
-  .footer { bottom: 14px; padding: 8px 16px; gap: 14px; font-size: 11px; }
-  .modal-win { padding: 28px 22px; width: 94vw; max-height: 85vh; }
+  .header p { font-size: 12px; }
+  .header { margin-bottom: 20px; padding-bottom: 14px; }
+  .posts { grid-template-columns: 1fr; gap: 12px; }
+  .post { padding: 16px; }
+  .post-text h3 { font-size: 15px; }
+  .post-text p { font-size: 12px; }
+  .post-img { width: 56px; height: 56px; border-radius: 8px; }
+
+  .page-nav {
+    position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%);
+    flex-direction: row; gap: 20px; z-index: 6;
+  }
+  .page-btn { width: 44px; height: 44px; }
+  .page-btn svg { width: 18px; height: 18px; }
+
+  .footer { bottom: 10px; right: 10px; padding: 8px 14px; gap: 10px; font-size: 10px; }
+  .footer .links { gap: 10px; }
+
+  .modal-win { padding: 28px 20px; width: 94vw; max-height: 85vh; }
   .modal-title { font-size: 22px; }
+  .modal-body { font-size: 14px; }
+  .modal-img { max-width: 100%; }
+
   .loader-box { padding: 32px 24px; }
 }
