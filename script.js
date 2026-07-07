@@ -81,16 +81,18 @@ function showModal(a) {
         <h2 class="modal-title"></h2>
         <div class="modal-date"></div>
         <div class="modal-body"></div>
-        ${a.img ? `<img class="modal-img" src="" alt="" />` : ""}
+        <img class="modal-img" src="" alt="" style="display:none" />
       </div>`;
     document.body.appendChild($modal);
     $modal.querySelector(".modal-bg").addEventListener("click", () => $modal.classList.remove("show"));
   }
   $modal.querySelector(".modal-title").textContent = a.title;
   $modal.querySelector(".modal-date").textContent = a.date;
-  $modal.querySelector(".modal-body").textContent = a.excerpt;
+  const body = a.content ? marked.parse(a.content) : a.excerpt.replace(/\n/g, "<br>");
+  $modal.querySelector(".modal-body").innerHTML = body;
   const $img = $modal.querySelector(".modal-img");
-  if ($img) $img.src = a.img || "";
+  if (a.img) { $img.src = a.img; $img.style.display = ""; }
+  else { $img.style.display = "none"; }
   $modal.style.color = a.color || "#fff";
   $modal.classList.toggle("show");
 }
