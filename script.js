@@ -78,10 +78,12 @@ function showModal(a) {
     $modal.innerHTML = `
       <div class="modal-bg"></div>
       <div class="modal-win">
-        <h2 class="modal-title"></h2>
-        <div class="modal-date"></div>
-        <div class="modal-body"></div>
-        <img class="modal-img" src="" alt="" style="display:none" />
+        <div class="modal-inner">
+          <h2 class="modal-title"></h2>
+          <div class="modal-date"></div>
+          <div class="modal-body"></div>
+          <img class="modal-img" src="" alt="" style="display:none" />
+        </div>
       </div>`;
     document.body.appendChild($modal);
     $modal.querySelector(".modal-bg").addEventListener("click", () => $modal.classList.remove("show"));
