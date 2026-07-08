@@ -1,14 +1,8 @@
 const articles = [
   {
-    date: "2026-07-08",
-    title: "今日更新",
-    excerpt: "更新了“个人简介"",
-    color: "black",
-  },
-  {
     date: "2026-07-07",
     title: "今日更新",
-    excerpt: "更新了液态玻璃效果",
+    excerpt: "今天更新了液态玻璃效果",
     content: "## 今日更新\n\n今天给博客换上了**液态玻璃**效果，参考了网上的 CSS 样例。\n\n主要改动：\n\n- 多层 inset 阴影模拟玻璃边缘折光\n- `::before` 内部模糊暗边\n- `::after` 对角线白色渐变光泽\n- 父容器 `contrast(3)` 放大层次\n\n> 整体观感更立体了。\n\n后续会继续优化移动端体验。\n 1\n 2\n 3\n 4\n 5\n 6",
     img: "",
     color: "#F7DC6F"
