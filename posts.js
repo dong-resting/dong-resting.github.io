@@ -2,7 +2,7 @@ const articles = [
   {
     date: "2026-07-08",
     title: "今日更新",
-    excerpt: "更新了“个人简介",
+    excerpt: "更新了“个人简介"",
     color: "black",
   },
   {
