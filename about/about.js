@@ -1,3 +1,20 @@
+// ===== 加载界面：等背景图加载完 =====
+(function() {
+  const loader = document.getElementById("loader");
+  let done = false;
+  function hide() {
+    if (done) return;
+    done = true;
+    loader.classList.add("hide");
+    setTimeout(() => loader.remove(), 500);
+  }
+  const img = new Image();
+  img.addEventListener("load", hide);
+  img.addEventListener("error", hide);
+  img.src = "../img/bivi.jpg";
+  setTimeout(hide, 4000);
+})();
+
 // ===== 章节滚动入场动画 =====
 const chapters = document.querySelectorAll(".chapter");
 const io = new IntersectionObserver((entries) => {
