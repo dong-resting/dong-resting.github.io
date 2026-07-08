@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人介绍 · Me的小窝</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <!-- 背景图片 -->
+  <div class="bg-img"></div>
+  <div class="bg-overlay"></div>
+
+  <!-- 顶部导航 -->
+  <nav class="top-nav glass">
+    <a class="nav-back" href="../index.html" aria-label="返回博客">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+      <span>返回博客</span>
+    </a>
+    <span class="nav-title">个人介绍</span>
+  </nav>
+
+  <!-- 滚动容器 -->
+  <main class="scroller">
+    <!-- 第一章：关于我 -->
+    <section class="chapter glass" id="ch-about"style="margin-bottom: 10px;">
+      <div class="chapter-head">
+        <span class="chapter-num">01</span>
+        <h2 class="chapter-title">关于我</h2>
+      </div>
+      <div class="chapter-body">
+        <!-- <div class="avatar-wrap">
+          <img src="../img/头像.jpg" alt="头像" />
+        </div> -->
+        <p class="lead">我是<strong>若梦33</strong>，一个还在探索中的开发者和内容创作者。</p>
+        <p>AI 助我完成各种事情。我将记录自己如何学习、试错、搭建工具流，也希望将那些有用的技能和技巧分享给更多人。</p>
+      </div>
+    </section>
+
+    <!-- 第二章：我的标签 -->
+    <section class="chapter glass" id="ch-tags" >
+      <!-- <div class="chapter-head">
+        <span class="chapter-num">02</span>
+        <h2 class="chapter-title">我的标签</h2>
+      </div> -->
+      <div class="chapter-body">
+        <div class="tag-row">
+          <span class="tag">准大三</span>
+          <span class="tag">AI + Code</span>
+          <span class="tag">学习实践</span>
+          <span class="tag">记录与分享</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第三章：我在探索什么 -->
+    <section class="chapter glass" id="ch-explore">
+      <div class="chapter-head">
+        <span class="chapter-num">02</span>
+        <h2 class="chapter-title">我在探索什么</h2>
+      </div>
+      <div class="chapter-body">
+        <div class="explore-list">
+          <article class="explore-item">
+            <div class="explore-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/>
+              </svg>
+            </div>
+            <div class="explore-text">
+              <h3>AI、skill 与开源工具</h3>
+              <p>试用有价值的 AI 工作流和开源项目，并说明它们到底能解决什么问题。</p>
+            </div>
+          </article>
+          <article class="explore-item">
+            <div class="explore-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16v16H4z"/>
+                <path d="M4 9h16M9 4v16"/>
+              </svg>
+            </div>
+            <div class="explore-text">
+              <h3>内容创作工作流</h3>
+              <p>把写作、发布、排版、选题发现等内容创作环节沉淀成可复用流程。</p>
+            </div>
+          </article>
+          <article class="explore-item">
+            <div class="explore-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+              </svg>
+            </div>
+            <div class="explore-text">
+              <h3>用代码解决真实问题</h3>
+              <p>倾听烦恼，用代码解决问题，demo 我的想法。</p>
+            </div>
+          </article>
+          <article class="explore-item">
+            <div class="explore-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12a8 8 0 0116 0M4 12a8 8 0 0016 0"/>
+                <path d="M2 12h20M12 2v20"/>
+              </svg>
+            </div>
+            <div class="explore-text">
+              <h3>网络 / 编程学习记录</h3>
+              <p>记录编程和实际开发习惯的学习过程，学习网络与数据安全。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 第四章：联系我 -->
+    <section class="chapter glass" id="ch-contact">
+      <div class="chapter-head">
+        <span class="chapter-num">03</span>
+        <h2 class="chapter-title">联系我</h2>
+      </div>
+      <div class="chapter-body">
+        <div class="contact-list">
+          <a class="contact-item" href="#" target="_blank">
+            <span class="contact-label">bilibili</span>
+            <span class="contact-value">若梦33</span>
+            <span class="contact-note">最近文章、学习与分享</span>
+          </a>
+          <a class="contact-item" href="#" title="">
+            <span class="contact-label">微信</span>
+            <span class="contact-value">y3216249724</span>
+            <span class="contact-note">添加时请备注，并识别来意</span>
+          </a>
+          <a class="contact-item" href="https://github.com/dong-resting" target="_blank">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">dong-resting</span>
+            <span class="contact-note">代码与项目</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-foot">
+      <span>Ciallo～(∠・ω< )⌒☆</span>
+    </footer>
+  </main>
+
+  <!-- 滚动进度条 -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <script src="about.js"></script>
+</body>
+</html>
