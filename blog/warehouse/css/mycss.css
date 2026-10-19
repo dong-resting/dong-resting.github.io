@@ -1,0 +1,138 @@
+/*body{
+	background-color:#f5f5fb;
+}*/
+.div01{
+	margin:10px;
+	position: relative;
+	background-color:#eeeeee;
+	border-radius:20px;
+	width:500px;
+	height:500px;
+}
+.div1{
+	/*margin:20px;*/
+	position: absolute;
+	bottom:0;
+	right:100px;
+	background-color:#5b5b5b;
+	border-radius:20px;
+	width:100px;
+	height:100px;
+	
+	transform-origin: left bottom;
+	animation: 
+		translate .8s cubic-bezier(0, .7, .6, 1) 0s both,
+		rotate1 .3s ease-in-out .1s both,
+		rotate2 .7s ease-in-out 1s forwards;
+}
+
+
+@keyframes translate {
+	from {translate:200% 0;}
+	to{translate:0 0;}
+}
+@keyframes rotate1 {
+	form { rotate:-14deg; }
+	to { rotate: -18deg; }
+}
+@keyframes rotate2{
+	0%{ rotate : -18deg; }
+	40%,
+	70%,
+	100%{ rotate : 0deg; }
+	55% { rotate : -2deg; }
+	85% { rotate : -1deg; }
+	
+}
+.p1{
+	position: absolute;
+	bottom:0px;
+	left:10px;
+	color:#5b5b5b;
+	font-size:20px;
+}
+.code1{
+	position: absolute;
+	top:0;
+	left:0;
+}
+.div2{
+	/*margin:20px;*/
+	position: absolute;
+	bottom:0;
+	right:200px;
+	background-color:#5b5b5b;
+	border-radius:20px;
+	width:100px;
+	height:100px;
+	animation: rolling .55s ease-out .1s both;
+}
+@keyframes rolling{
+	from,
+	to { transform-origin:right bottom;}
+	0%{
+		transform:rotate(0deg);
+	}
+	50%{
+		transform:rotate(90deg);
+	}
+	50.1%{
+		transform:translateX(100%);
+	}
+	75%{
+		transform:translateX(100%) rotate(8deg);
+	}
+	100%{
+		transform:translateX(100%);
+	}
+}
+.div3{
+	overflow:hidden;
+	position: absolute;
+	bottom:0;
+	right:100px;
+	background-color: white;
+	border-radius:20px;
+	width:100px;
+	height:100px;
+}
+.div301 {
+	background-color:#5b5b5b;
+	border-radius:20px;
+	width:100px;
+	height:100px;
+  	animation: translate_2 .8s cubic-bezier(0.78, 0, 0.2, 1) 0s both,border-radius 1.5s ease-in-out 0s forwards;
+}
+.div301 p{
+	color:white;
+	float:left;
+	font-size:60px;
+	margin: 10px 0;
+	width:100px;
+	text-align: center;
+}
+.text {
+  transform-origin: bottom center;
+  animation: scale 0.8s cubic-bezier(0.78, 0, 0.2, 1) .05s both;
+}
+
+@keyframes translate_2 {
+  from {
+    transform: translate(-50%, 101%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes border-radius {
+  from { border-radius: 0 100% 0 0; }
+  to { border-radius: 0 0 0 0; }
+}
+
+@keyframes scale {
+  from { transform: scale(1.4, 0); }
+  to { transform: scale(1, 1); }
+}	
